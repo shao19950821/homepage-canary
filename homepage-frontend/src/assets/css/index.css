@@ -1,0 +1,128 @@
+/*banner 占位符*/
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main {
+    margin-top: 80px;
+    font-family: "Microsoft YaHei", Arial;
+}
+
+.main .b-line {
+    height: 5px;
+    width: 100%;
+    background: #44c2ff;
+}
+
+.main .b-img {
+    height: 511px;
+    width: 100%;
+}
+
+.main .w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main .c-f1 {
+    padding-bottom: 40px;
+    background: #f6f6f6;
+}
+
+.main .c-f1 .logo {
+    padding-bottom: 20px;
+}
+
+.main .c-f1 h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 15px;
+}
+
+.main .c-f1 h3 a.tit-box {
+    color: #666;
+    border-bottom: 1px solid #666;
+}
+
+.main .c-f1 h3 a.tit-box:hover {
+    color: #36bdf1;
+    border-bottom: 1px solid #36bdf1;
+}
+
+.main .c-f1 p {
+    font-size: 15px;
+    text-align: left;
+    color: #666;
+    line-height: 24px;
+}
+
+.main .c-f1 ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.main .c-f1 ul li img {
+    height: 100px;
+    width: 100px;
+}
+
+.main .c-f1 ul li p {
+    padding-top: 28px;
+    font-size: 18px;
+    color: #222;
+    line-height: 18px;
+}
+
+.main .c-f1 div {
+    text-align: center;
+}
+
+
+.main .c-f1 div dd {
+    padding-top: 28px;
+    font-size: 18px;
+    color: #222;
+    line-height: 18px;
+}
+.bottom {
+    width: 100%;
+    background: #4383D1;
+}
+
+.bottom ul li {
+    padding: 60px 0 80px 0;
+    text-align:left;
+}
+
+.bottom ul li h3 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.bottom ul li p {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 36px;
+}
+
+.bottom ul li div {
+    padding-top: 60px;
+}
+
+.bottom ul li h4 {
+    color: #ffffff;
+    font-size: 29px;
+}
+
+

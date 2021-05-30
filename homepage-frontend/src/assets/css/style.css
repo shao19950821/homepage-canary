@@ -1,0 +1,185 @@
+.main .c-f1 .fenxi-pt35 h3 {
+    text-align: center;
+    color: #595757;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.main .c-f1 .title-eng {
+    text-align: center;
+    color: #595757;
+    font-size: 24px;
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 170%;
+}
+
+.main .c-f1 .duty_img {
+    height: 100%;
+    width: 100%;
+}
+.main .c-f1 .honor_img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.main .c-f1 .fenxi-mt50 {
+    margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+.main .c-f1 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main .c-f1 .dutyWish {
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+}
+
+.main .c-f1 .dutyWish_common {
+    width: 50%;
+    padding: 0 10px;
+    position: relative;
+}
+
+.main .c-f1 .dutyWish_common > div:nth-child(2) {
+    width: 86%;
+    margin: auto;
+    position: relative;
+    bottom: 60px;
+    background: #fff;
+    box-shadow: 2px 0 5px rgb(220 220 220);
+    box-shadow: 0 2px 5px rgb(220 220 220);
+    box-shadow: -2px 0 5px rgb(220 220 220);
+    padding: 15px 50px;
+    height: 160px;
+    left: -0.5%;
+    text-align: center;
+}
+
+.main .c-f1 .dutyWish_pic, .dutyWish_word {
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.main .c-f1 .dutyWish_left > div:nth-child(2) > p:nth-child(1) {
+    color: rgb(62, 58, 57);
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.main .c-f1 .dutyWish_left > div:nth-child(2) > p:nth-child(2) {
+    color: rgb(62, 58, 57);
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.main .c-f1 .dutyWish_right > div:nth-child(2) > p:nth-child(1) {
+    color: rgb(5, 69, 167);
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.main .c-f1 .dutyWish_right > div:nth-child(2) > p:nth-child(2) {
+    color: rgb(5, 69, 167);
+    margin-bottom: 3px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.main .c-f1 .dutyWish_right > div:nth-child(2) > p:nth-child(3) {
+    color: rgb(5, 69, 167);
+    margin-bottom: 3px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.main .c-f1 .dutyWish_right > div:nth-child(2) > p:nth-child(4) {
+    color: rgb(5, 69, 167);
+    margin-bottom: 3px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.main .c-f1 .dutyWish_right > div:nth-child(2) > p:nth-child(5) {
+    color: rgb(5, 69, 167);
+    margin-bottom: 3px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.fenxi-pt35 {
+    position: relative;
+    padding-top: 35px;
+}
+
+.aboutCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.aboutCont .left {
+    width: 50%;
+}
+.aboutCont .left p {
+    margin-bottom: 10px;
+    line-height: 28px;
+    font-size: 16px;
+    text-align: left;
+}
+.aboutCont .right {
+    width: 45%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.honors-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 30px 0 50px;
+}
+.honors-list {
+     display: -webkit-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.honors-title h4 {
+    color: #595757;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.honors-list li {
+    border-bottom: 1px solid #ababab;
+    color: #3e3a39;
+    font-size: 16px;
+    width: 32%;
+    text-align: center;
+    padding: 25px 5px 15px;
+    box-sizing: border-box;
+    list-style: none;
+}
+

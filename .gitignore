@@ -1,0 +1,5 @@
+/.idea
+/homepage-frontend/.idea
+/homepage-backend/.idea
+/homepage-frontend/node_modules
+/homepage-backend/target
