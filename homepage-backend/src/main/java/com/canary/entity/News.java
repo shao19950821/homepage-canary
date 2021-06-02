@@ -35,13 +35,17 @@ public class News implements Serializable {
     @ApiModelProperty(value = "新闻标题", required = true, example = "金雀医疗获得融资200W")
     private String title;
 
-    @NotBlank(message = "标题不能为空")
+    @NotBlank(message = "图片地址不能为空")
     @ApiModelProperty(value = "图片地址", required = true, example = "http://localhost:8081/api/file/beqo7w.jpg")
     private String imageUrl;
 
     @NotBlank(message = "内容不能为空")
     @ApiModelProperty(value = "新闻内容", required = true, example = "金雀医疗获得融资200W，让我们鼓掌庆祝")
     private String content;
+
+    @NotBlank(message = "内容不能为空")
+    @ApiModelProperty(value = "新闻内容", required = true, example = "金雀医疗获得融资200W，让我们鼓掌庆祝")
+    private String description;
 
     @JsonFormat(pattern = "yyyy-MM-dd")
     @ApiModelProperty(value = "新建时间", required = false)
@@ -116,5 +120,13 @@ public class News implements Serializable {
 
     public void setStatus(Integer status) {
         this.status = status;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

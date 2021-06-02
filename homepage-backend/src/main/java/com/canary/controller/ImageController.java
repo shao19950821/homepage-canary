@@ -3,6 +3,7 @@ package com.canary.controller;
 import java.io.File;
 import java.io.IOException;
 
+import com.canary.common.lang.Result;
 import com.canary.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -20,7 +21,7 @@ public class ImageController {
 
 
     @PostMapping("/image/upload")
-    public String coversUpload(MultipartFile file) {
+    public Result coversUpload(MultipartFile file) {
         String folder = "/Users/natsu/Desktop/img/";
         File imageFolder = new File(folder);
         File f = new File(imageFolder, StringUtils.getRandomString(6) + file.getOriginalFilename()
@@ -30,10 +31,9 @@ public class ImageController {
         try {
             file.transferTo(f);
             String imgURL = "http://localhost:8081/api/file/" + f.getName();
-            return imgURL;
+            return Result.succ(imgURL);
         } catch (IOException e) {
-            e.printStackTrace();
-            return "";
+            return Result.fail("上传图片失败");
         }
     }
 

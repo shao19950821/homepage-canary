@@ -36,7 +36,7 @@ public class NewsController {
     @GetMapping("/news")
     public Result list(@RequestParam(defaultValue = "1") Integer currentPage) {
         Page page = new Page(currentPage, 5);
-        IPage pageData = newsService.page(page, new QueryWrapper<News>().orderByDesc("createTime"));
+        IPage pageData = newsService.page(page, new QueryWrapper<News>().orderByDesc("create_time"));
         return Result.succ(pageData);
     }
 

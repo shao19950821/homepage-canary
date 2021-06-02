@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../views/Login.vue'
-import Blogs from '../views/Blogs.vue'
-import BlogEdit from '../views/BlogEdit.vue'
-import BlogDetail from '../views/BlogDetail.vue'
+import NewsCenter from '../views/NewsCenter.vue'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Member from '../views/Member.vue'
-import Upload from '../views/ImageUpload.vue'
+import Development from '../views/Development.vue'
+import NewsDetail from '../views/NewsDetail.vue'
+import NewsEdit from '../views/NewsEdit.vue'
 
 Vue.use(VueRouter)
 
@@ -18,35 +18,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/blogs',
-    name: 'Blogs',
-    component: Blogs
-  },
-  {
     path: '/login',
     name: 'Login',
     component: Login
-  },
-  {
-    path: '/blog/add',
-    name: 'BlogAdd',
-    component: BlogEdit,
-    meta: {
-      requireAuth: true
-    }
-  },
-  {
-    path: '/blog/:blogId',
-    name: 'BlogDetail',
-    component: BlogDetail
-  },
-  {
-    path: '/blog/:blogId/edit',
-    name: 'BlogEdit',
-    component: BlogEdit,
-    meta: {
-      requireAuth: true
-    }
   },
   {
     path: '/home',
@@ -64,10 +38,25 @@ const routes = [
     component: Member,
   },
   {
-    path: '/upload',
-    name: 'Upload',
-    component: Upload,
-  }
+    path: '/development',
+    name: 'Development',
+    component: Development,
+  },
+  {
+    path: '/news',
+    name: 'NewsCenter',
+    component: NewsCenter
+  },
+  {
+    path: '/newsEdit',
+    name: 'NewsEdit',
+    component: NewsEdit
+  },
+  {
+    path: '/news/:newsId',
+    name: 'NewsDetail',
+    component: NewsDetail
+  },
 ]
 
 const router = new VueRouter({

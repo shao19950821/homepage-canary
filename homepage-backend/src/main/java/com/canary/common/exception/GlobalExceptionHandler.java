@@ -1,8 +1,6 @@
 package com.canary.common.exception;
 
 import com.canary.common.lang.Result;
-import com.canary.common.lang.Result;
-import org.apache.shiro.ShiroException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -17,13 +15,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class GlobalExceptionHandler {
 
     private static final Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);
-
-    @ResponseStatus(HttpStatus.UNAUTHORIZED)
-    @ExceptionHandler(value = ShiroException.class)
-    public Result handler(ShiroException e) {
-        logger.error("运行时异常：----------------{}", e);
-        return Result.fail(401, e.getMessage(), null);
-    }
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(value = MethodArgumentNotValidException.class)
